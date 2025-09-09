@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex h-screen w-full justify-center items-center">
+      <div class="h-[400px] bg-gray-300 w-[500px] flex justify-between rounded-xl p-4 shadow-lg">
+        
+        <!-- Left Side -->
+        <div class="logo w-[240px] flex flex-col items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOUB5kxGbdsk2jUMN89LM8iPJAB1w1UOqvTQ&s"
+            alt="Instagram Logo"
+            class="h-[120px] object-contain mix-blend-multiply"
+          />
+          <a href="https://instagram.com" target="_blank" class="mt-2">
+            <h4 class="text-center font-bold font-serif text-lg">Instagram</h4>
+          </a>
+          <p class="text-center text-gray-700 mt-4 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
+            eligendi?
+          </p>
+          <div class="mt-5 flex flex-col items-center space-y-2">
+            <a href="#" class="text-blue-600 text-sm font-mono hover:underline">Sign Up?</a>
+            <a href="#" class="text-blue-600 text-sm font-mono hover:underline">Forgot Password?</a>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="w-[240px] flex items-center justify-center">
+          <form action="" class="flex flex-col w-full">
+            <input 
+              type="text" 
+              placeholder="Email ID..." 
+              class="h-[40px] mb-2 px-2 rounded-md border border-gray-300 focus:border-black outline-none" 
+            />
+            <input 
+              type="password" 
+              placeholder="Password..." 
+              class="h-[40px] mb-2 px-2 rounded-md border border-gray-300 focus:border-black outline-none" 
+            />
+            <input 
+              type="submit" 
+              value="Sign In" 
+              class="h-[40px] bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition" 
+            />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
