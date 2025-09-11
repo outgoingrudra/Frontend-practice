@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <div class="flex justify-between ">
+        <h1 class="text-3xl font-bold italic  mx-3 mt-3  cursor-pointer">My-Gallery</h1>
+        <div class="mt-1">
+            <ul class="flex gap-5 mx-3">
+                <li class="cursor-pointer font-serif hover:text-blue-700 p-1  rounded-xl hover:bg-gray-300">Offline</li>
+                <li class="cursor-pointer font-serif hover:text-blue-700  p-1  rounded-xl hover:bg-gray-300">Online</li>
+                <li class="cursor-pointer font-serif hover:text-blue-700  p-1  rounded-xl hover:bg-gray-300">user234</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-5 ">
+        <div class="flex flex-wrap gap-3 " id="imgs"></div>
+    </div>
     
 </body>
 </html>
+<script>
+    fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(console.log);
+</script>
