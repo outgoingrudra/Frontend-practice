@@ -1,1 +1,7 @@
 for image background remove in tailwind ->  mix-blend-multiply
+
+
+
+backgrounds 
+--------------
+ bg-gradient-to-r from-cyan-500 to-blue-500  ->  gradient of cyan to blue (Superb)
