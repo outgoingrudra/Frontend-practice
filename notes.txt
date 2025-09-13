@@ -31,7 +31,7 @@ buttons ( Beautiful Buttons )
 box shadow 
 ------------
   <!-- Green Box shadow -->
-  <div class="h-32 w-32 bg-green-500 rounded-lg shadow-2xl hover:shadow-[0_10px_25px_rgba(0,0,0,0.5)] transition"></div>
+  <div class="h-32 w-32 bg-green-500 rounded-lg shadow-2xl hover:shadow-[0_10px_25px_rgba(0,0,0,0.5)] tr"ansition></div>
 
   <!-- Yellow Box inner shadow-->
   <div class="h-32 w-32 bg-yellow-400 rounded-lg shadow-[inset_0_4px_10px_rgba(0,0,0,0.4)]"></div>
