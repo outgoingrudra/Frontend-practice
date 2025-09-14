@@ -42,4 +42,23 @@ transitions
 <div class="h-24 w-24 bg-pink-500 rounded-lg transition duration-300 hover:scale-110"></div>
 
 
+beautiful hover shadow effect--------
+<div class="h-40 w-64 bg-white rounded-xl shadow-md p-5 
+transition duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
+  <h2 class="font-bold text-xl mb-2">Card Title</h2>
+  <p class="text-gray-600">This card pops on hover.</p>
+</div>
+
+image zoomer -----
+<br><br>
+<div class="overflow-hidden rounded-xl w-64">
+  <img src="https://picsum.photos/300" 
+       class="w-full h-40 object-cover transition duration-700 ease-in-out transform hover:scale-110" />
+</div>
+
+
+
+rotate-scale---------
+<div class="h-24 w-24 bg-pink-500 rounded-lg 
+transition duration-700 ease-in-out transform hover:rotate-6 hover:scale-110"></div>
 
