@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desktop Hamburger</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 bg-gray-800 shadow-lg relative">
+    <div class="text-2xl font-bold">MySite</div>
+
+    <!-- Hamburger (Always Visible) -->
+    <button id="hamburger" class="flex flex-col gap-1.5 cursor-pointer">
+      <span class="block w-7 h-1 bg-white transition-all"></span>
+      <span class="block w-7 h-1 bg-white transition-all"></span>
+      <span class="block w-7 h-1 bg-white transition-all"></span>
+    </button>
+  </nav>
+
+  <!-- Dropdown Menu -->
+  <div id="dropdown" 
+       class="max-h-0 overflow-hidden flex-col gap-4 bg-gray-700 p-0 transition-all duration-500">
+    <a href="#" class="block px-4 py-2 hover:bg-gray-600">Home</a>
+    <a href="#" class="block px-4 py-2 hover:bg-gray-600">About</a>
+    <a href="#" class="block px-4 py-2 hover:bg-gray-600">Services</a>
+    <a href="#" class="block px-4 py-2 hover:bg-gray-600">Contact</a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const dropdown = document.getElementById("dropdown");
+
+    let isOpen = false;
+    hamburger.addEventListener("click", () => {
+      if (isOpen) {
+        dropdown.classList.remove("p-4");
+        dropdown.classList.add("p-0");
+        dropdown.style.maxHeight = "0px";
+      } else {
+        dropdown.classList.remove("p-0");
+        dropdown.classList.add("p-4");
+        dropdown.style.maxHeight = "300px"; // enough space for items
+      }
+      isOpen = !isOpen;
+    });
+  </script>
+
+</body>
+</html>
